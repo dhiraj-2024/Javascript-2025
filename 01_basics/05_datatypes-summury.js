@@ -11,7 +11,7 @@ let state; //undefined
 const id = Symbol("123"); //symbole
 const newid = Symbol("123")
 
-console.log(id === newid);
+// console.log(id === newid);
 
 // 2.Non_Primitives: Array , Object , function :
 
@@ -28,4 +28,28 @@ const myfirstfunction = function(){
     console.log("hello js ");
 }//function
 
-console.log(typeof student)
+// console.log(typeof student)
+
+
+// +++++++++++++++++++++++++++++++++++STACK AND HEAP MEMORY IN JAVASCRIPT++++++++++++++++++++++++++++++++++++++++++
+
+// primitive(stack).                  Non-primitive(heap)
+
+let myYoutubeName = "dhirajvlg";
+let myanotherYtName = myYoutubeName;
+myanotherYtName = "newvlgdhiraj"
+
+// console.log(myanotherYtName)
+
+
+
+let userone = {
+    email : 'user@gmail.com',
+    age: 23
+
+}
+
+let usertwo = userone;
+usertwo.email = "dhiraj@gmail.com"
+console.log(usertwo.email)
+console.log(usertwo.email)
