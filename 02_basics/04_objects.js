@@ -76,3 +76,31 @@ output is :
     */
 
 console.log(tinderUser.hasOwnProperty("name")) //  true
+
+const cource ={
+    courceName : "js in hindi ",
+    price : "999",
+    courceInstructor  : "Dhiraj Rajput"
+}
+// console.log(cource.courceInstructor) // Dhiraj Rajput
+
+const {courceInstructor : Instructor } = cource;
+// console.log(courceInstructor)  // Dhiraj Rajput
+// console.log(Instructor)
+
+
+
+// json format : we will get data from api in json format like this 
+
+
+// {
+//     "name" : "dhiraj",
+//     "age" : "21",
+//     "city" : "nashik"
+// }
+
+[
+    {},
+    {},
+    {}
+]
