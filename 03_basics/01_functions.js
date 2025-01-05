@@ -48,7 +48,7 @@ function userLoginMessage(username){
     //     return
     // }
     if(!username){
-        console.log("please enter username")
+        // console.log("please enter username")
         return
     }
 
@@ -59,3 +59,37 @@ function userLoginMessage(username){
 // console.log(userLoginMessage("")) // just login
 console.log(userLoginMessage()) //undefined just login 
 
+
+function calculateCartPrice(...itemprice){
+    return itemprice;
+}
+// console.log(calculateCartPrice(200,400,23,34,5666,990)) //[ 200, 400, 23, 34, 5666, 990 ]
+
+
+const user = {
+    name : "dhiraj",
+    price : 199
+}
+
+function handleObject(anyobject){
+    return(`Username is ${anyobject.name} and the price is ${anyobject.price}`)
+}
+
+console.log(handleObject(
+    {
+        name:"dhiraj",
+        price:1999
+    }
+)) //Username is dhiraj and the price is 1999
+
+
+// console.log(handleObject(user)) //Username is dhiraj and the price is 199
+
+
+const myNewArray = [200,334,2,34,55,889 ]
+
+function returnSecondValue(anyarray){
+    return(`second value of array is ${anyarray[1]}`)
+}
+
+console.log(returnSecondValue(myNewArray)) //second value of array is 334
