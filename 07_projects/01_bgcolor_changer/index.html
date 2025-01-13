@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Color-Changer</title>
+</head>
+<style>
+    body{
+        background-color: rgb(86, 83, 83);
+        color:black;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+  .button{
+    margin-top: 200px;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+  }
+</style>
+<body>
+    <div class="container">
+        <h1 class="heading">CLICK Set Your Favourite Color 🤓</h1>
+
+       <div>
+        <button class="button" id="red" style="background-color: red;">Red</button>
+        <button class="button" id="orange" style="background-color: orange;">Orange</button>
+        <button class="button" id="purple" style="background-color: purple;">Purple</button>
+        <button class="button" id="pink" style="background-color: pink;">Pink</button>
+        <button class="button" id="yellow" style="background-color: yellow;">Yellow</button>
+
+
+       </div>
+
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
