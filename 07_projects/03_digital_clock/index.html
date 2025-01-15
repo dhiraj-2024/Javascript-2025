@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<style>
+    body{
+        background-color: #000000;
+        color: wheat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        height: 140px;
+        width: 410px;
+        border: 3px solid rgb(57, 19, 243);
+        /* border-radius: 10px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(254, 250, 255);
+    }
+    #showtime{
+        height: 120px;
+        width: 400px;
+        border: 2px solid rgb(7, 55, 246);
+        border-radius: 10px;
+        color: rgb(255, 0, 0);
+        background-color: black;
+        font-size: 100px;
+        text-align: center;
+        font-weight: 900;
+        text-decoration:dashed;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        
+
+    }
+</style>
+<body>
+    <div class="box">
+        <p class="clock" id="showtime"></p>
+        <p class="date"></p>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
