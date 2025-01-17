@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello welcome to Javascript</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // setTimeout(() => {
+    //     console.log("dhiraj")
+    // }, 3000);
+
+    // let changeHeading = document.querySelector('h1').innerHTML = "change this heading using settimeout"
+    // setTimeout(()=>{
+    //  let changeHeading = document.querySelector('h1').innerHTML = "change this heading using settimeout"
+    // },2000)
+    
+    const changeH = function(){
+    document.querySelector('h1').innerHTML = "change this heading using settimeout"
+    }
+    
+     const changeme = setTimeout(changeH,3000)
+    
+    document.querySelector("#stop").addEventListener("click",()=>{
+        clearTimeout(changeme)
+        console.log("stope")
+    })
+
+
+
+</script>
+</html>
