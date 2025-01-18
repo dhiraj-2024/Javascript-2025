@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api request</title>
+</head>
+<style>
+    .card{
+        height: 400px;
+        width: 200px;
+        border: 2px solid black;
+    }
+    .image{
+        height: 100px;
+        width: 100%;
+        border: 2px solid red;
+    }
+</style>
+<body>
+    <div>
+        <div class="card">
+            <div class="image">
+
+            </div>
+            <h1 class="name"></h1>
+            <p class="followers"></p>
+        </div>
+
+    </div>
+</body>
+<script>
+    let followers = document.querySelector(".followers")
+    let namePrint = document.querySelector(".name")
+
+
+    const requesturl = "https://api.github.com/users/hiteshchoudhary"
+   const xhr = new XMLHttpRequest()
+   xhr.open('GET', requesturl)
+   xhr.onreadystatechange = function(){
+    //    console.log(xhr.readyState) 
+       if (xhr.readyState === 4) {
+
+        const data = JSON.parse(this.responseText)
+        console.log(data.login)
+        console.log(data)
+        namePrint.innerHTML =  data.name
+        followers.innerHTML = data.followers
+        
+       }
+   }
+   xhr.send()
+
+ 
+   
+</script>
+</html>
